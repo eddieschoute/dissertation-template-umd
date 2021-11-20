@@ -1,0 +1,60 @@
+% Refer to the UMD style guide for the requirements for your dissertation
+% Current version (2021)
+% https://gradschool.umd.edu/sites/gradschool.umd.edu/files/uploads/DissertationThesis/etd_style_guide_201708.pdf
+\title{Quantum routing for architecture-respecting circuit transformations}
+
+% \includeonly{Acknowledgements}
+
+\begin{document}
+
+\frontmatter
+\pagestyle{empty}
+\singlespacing
+\include{abstract} %(must be first, required, non-numbered)
+\include{titlepage} %(must follow Abstract, required, non-numbered)
+% \include{copyright} %(highly recommended, non-numbered)
+
+
+%Pages from this point start at lower-case Roman number ii)
+\pagestyle{plain}
+\setcounter{page}{2}
+
+\ifbool{doublespaced}{\doublespacing}{}
+% Preface or Foreword
+% Dedication
+\include{acknowledgements} %(if present, lower-case Roman)
+\ifbool{doublespaced}{\singlespacing}{}
+
+% \cleardoublepage
+% \microtypesetup{protrusion=false} % If you use microtype
+\tableofcontents %(required, lower-case Roman)
+% \microtypesetup{protrusion=true}
+
+% List of tables
+% List of figures
+% List of abbreviations
+
+\newpage
+\ifbool{doublespaced}{\doublespacing}{}
+\mainmatter
+
+\include{introduction}
+
+\include{chapter-1}
+
+\include{conclusion}
+
+\appendix
+
+\include{appendix-1}
+
+\singlespacing
+\backmatter
+
+% Glossary
+
+\printbibliography[heading=bibintoc]%
+
+% Index
+
+\end{document}
